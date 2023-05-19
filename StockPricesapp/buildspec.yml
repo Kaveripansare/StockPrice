@@ -7,6 +7,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Docker Hub...
+      - echo $DOCKERHUB_PASSWORD | docker login --username $DOCKERHUB_USERNAME --password-stdin
   build:
     commands:
       - echo Building the Spring Boot application...
@@ -16,5 +17,4 @@ phases:
   post_build:
     commands:
       - echo Pushing the Docker image to Docker Hub...
-      - docker login -u kaveripansare -p Kaveri@123
       - docker push kaveripansare/stockapp:latest
