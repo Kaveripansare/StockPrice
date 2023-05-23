@@ -1,0 +1,6 @@
+[
+	{
+		"name":"my-app",
+		"imageUri":"kaveripansare/myapp:latest"
+	}
+]
