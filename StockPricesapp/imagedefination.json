@@ -1,6 +1,6 @@
 [
 	{
-		"name":"my-app",
+		"name":"stockcontainer",
 		"imageUri":"kaveripansare/myapp:latest"
 	}
 ]
